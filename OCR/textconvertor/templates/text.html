@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+
+body{
+		background-color: lightblue;
+		display: block;
+		vertical-align: center;
+		margin-left: 5%;
+
+	}
+
+</style>
+
+<body>
+<ul>
+<h2>Recognized Text</h2>
+{% for i in text %}
+<p>{{i}}<br></p>
+{% endfor %}
+</ul>
+
+</body>
+</html>

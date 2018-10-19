@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	form{
+	background-color: lightblue;
+    border: none;
+    color: white;
+    padding: 30px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-right: 900px;
+	
+</style>	
+</head>
+<body>
+	<ul>
+	<h1>Image Form</h1>
+
+	<form method="post" action="" enctype="multipart/form-data">
+		{% csrf_token %}
+
+		<p>{{form.as_p}}</p><br>
+		
+		<button type='submit'>Browse Image</button>
+	</form>
+</ul>
+
+</body>
+</html>

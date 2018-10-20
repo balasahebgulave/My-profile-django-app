@@ -17,8 +17,6 @@
 	    height: 100%;
 	    text-align: center;
 	    vertical-align: center;
-	    /*padding: 1px 1px;*/
-        /*border: 1px solid #ddd;*/
         background-color: lightblue;
 
 	}
@@ -30,7 +28,7 @@
 <div>
 <h2>Detected Text</h2>
 <img  width= "50%" height="50%" src="../media/output/BB_result.png"/><br><br>
-<a href="http://localhost:8000/text/"><h3>show recognized text</h3></a>
+<a href="{% url 'text' %}"><h3>show recognized text</h3></a>
 </div>
 
 </body>
